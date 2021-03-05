@@ -17,11 +17,9 @@ class Result extends StatelessWidget {
           Text(_name),
           Container(
             margin: EdgeInsets.only(top: 20, bottom: 20),
-            child: Expanded(
-              child: Text(
-                _result.toStringAsFixed(2),
-                style: TextStyle(fontSize: 36),
-              ),
+            child: Text(
+              _result.toStringAsFixed(2),
+              style: TextStyle(fontSize: 36),
             ),
           ),
         ],
