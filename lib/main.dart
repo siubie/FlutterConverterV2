@@ -31,7 +31,9 @@ class _MyAppState extends State<MyApp> {
   }
 
   //0 fixing error di layout
+  //buang expanded di result widget
   //1 buat variabel dropdown
+  var listSatuanSuhu = ["kelvin", "reamur"];
 
   @override
   Widget build(BuildContext context) {
@@ -53,6 +55,22 @@ class _MyAppState extends State<MyApp> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Input(etInput: etInput),
+                //3 buat dropdown biasa
+                DropdownButton(
+                  items: [
+                    DropdownMenuItem(
+                      child: Text("Kelvin"),
+                      value: "kelvin",
+                    ),
+                    DropdownMenuItem(
+                      child: Text("Reamur"),
+                      value: "reamur",
+                    )
+                  ],
+                  value: "kelvin",
+                  onChanged: (value) {},
+                  isExpanded: true,
+                ),
                 Container(
                   margin: EdgeInsets.only(top: 20, bottom: 20),
                   child: Row(
