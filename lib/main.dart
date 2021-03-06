@@ -20,6 +20,7 @@ class _MyAppState extends State<MyApp> {
   double _kelvin = 0;
   double _reamur = 0;
   double _fahrenheit = 0;
+  String selectedDropdown = "kelvin";
 
   _konversiSuhu() {
     setState(() {
@@ -63,8 +64,12 @@ class _MyAppState extends State<MyApp> {
                       child: Text(value),
                     );
                   }).toList(),
-                  value: "kelvin",
-                  onChanged: (value) {},
+                  value: selectedDropdown,
+                  onChanged: (value) {
+                    setState(() {
+                      selectedDropdown = value;
+                    });
+                  },
                   isExpanded: true,
                 ),
                 Container(
