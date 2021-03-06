@@ -108,7 +108,11 @@ class _MyAppState extends State<MyApp> {
                 Convert(konvertHandler: _konversiSuhu),
                 Expanded(
                   child: ListView(
-                    children: [],
+                    children: listHasil.map((String value) {
+                      return Container(
+                        child: Text(value),
+                      );
+                    }).toList(),
                   ),
                 ),
               ],
