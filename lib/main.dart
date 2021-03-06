@@ -59,7 +59,6 @@ class _MyAppState extends State<MyApp> {
             margin: EdgeInsets.all(8),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               mainAxisSize: MainAxisSize.max,
               children: [
                 Input(etInput: etInput),
