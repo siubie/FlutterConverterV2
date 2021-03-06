@@ -20,6 +20,7 @@ class _MyAppState extends State<MyApp> {
   double _kelvin = 0;
   double _reamur = 0;
   double _fahrenheit = 0;
+  double _result = 0;
   String selectedDropdown = "kelvin";
 
   _konversiSuhu() {
@@ -80,16 +81,7 @@ class _MyAppState extends State<MyApp> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Result(
-                        result: _kelvin,
-                        name: "Kelvin",
-                      ),
-                      Result(
-                        result: _reamur,
-                        name: "Reamur",
-                      ),
-                      Result(
-                        result: _fahrenheit,
-                        name: "Fahrenheit",
+                        result: _result,
                       ),
                     ],
                   ),
