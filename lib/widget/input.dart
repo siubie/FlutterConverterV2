@@ -8,14 +8,13 @@ class Input extends StatelessWidget {
   }) : super(key: key);
 
   final TextEditingController etInput;
-
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      decoration: InputDecoration(hintText: "Masukkan Suhu Dalam Celcius"),
-      inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-      controller: etInput,
-      keyboardType: TextInputType.number,
-    );
+        decoration: InputDecoration(hintText: "Masukkan Suhu Dalam Celcius"),
+        inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+        controller: etInput,
+        keyboardType:
+            TextInputType.numberWithOptions(decimal: true, signed: false));
   }
 }

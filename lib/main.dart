@@ -30,6 +30,9 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  //0 fixing error di layout
+  //1 buat variabel dropdown
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
