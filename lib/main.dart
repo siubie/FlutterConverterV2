@@ -57,16 +57,12 @@ class _MyAppState extends State<MyApp> {
                 Input(etInput: etInput),
                 //3 buat dropdown biasa
                 DropdownButton(
-                  items: [
-                    DropdownMenuItem(
-                      child: Text("Kelvin"),
-                      value: "kelvin",
-                    ),
-                    DropdownMenuItem(
-                      child: Text("Reamur"),
-                      value: "reamur",
-                    )
-                  ],
+                  items: listSatuanSuhu.map((String value) {
+                    return DropdownMenuItem(
+                      value: value,
+                      child: Text(value),
+                    );
+                  }).toList(),
                   value: "kelvin",
                   onChanged: (value) {},
                   isExpanded: true,
