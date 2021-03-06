@@ -86,6 +86,30 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
                 Convert(konvertHandler: _konversiSuhu),
+                Expanded(
+                  child: ListView(
+                    children: [
+                      Container(
+                        child: Text(
+                          "Item 1",
+                          style: TextStyle(fontSize: 15),
+                        ),
+                      ),
+                      Container(
+                        child: Text(
+                          "Item 1",
+                          style: TextStyle(fontSize: 15),
+                        ),
+                      ),
+                      Container(
+                        child: Text(
+                          "Item 1",
+                          style: TextStyle(fontSize: 15),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
