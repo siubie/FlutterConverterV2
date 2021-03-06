@@ -31,6 +31,12 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  _onDropdownChanged(String value) {
+    setState(() {
+      selectedDropdown = value;
+    });
+  }
+
   //0 fixing error di layout
   //buang expanded di result widget
   //1 buat variabel dropdown
@@ -65,11 +71,7 @@ class _MyAppState extends State<MyApp> {
                     );
                   }).toList(),
                   value: selectedDropdown,
-                  onChanged: (value) {
-                    setState(() {
-                      selectedDropdown = value;
-                    });
-                  },
+                  onChanged: _onDropdownChanged,
                   isExpanded: true,
                 ),
                 Container(
